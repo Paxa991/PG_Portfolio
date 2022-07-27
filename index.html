@@ -1,8 +1,10 @@
 <html>
  <head>
     <link rel="stylesheet" type="text/css" href="css/style.css">
- </head>
+    
+</head>
  <body class="body">
+
 
 <!-- Nav HTML -->
 <div class="nav_container">
@@ -11,14 +13,25 @@
             <button class="nav_button"><a href="Skills.html">Skills</a></button>
             <button class="nav_button"><a href="Work.html">Work</a></button>
             <button class="nav_button"><a href="Contact.html">Contact</a></button>
+            
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider round button theme-icon">
+                    <img class="light-icon" src="Images/Sun.svg">
+                <i aria-hidden="true" class="fas fa-moon" title="Toggle between dark and light mode"></i>
+                <i aria-hidden="true" class="fas fa-sun" title="Toggle between dark and light mode" ></i>
+                <span class="sr-only"></span>
+                </span>
+            </label>
         </div>
-
 </div>
+
 
 <!-- Section HTML -->
 <section class="hero_area">
     <div class="title_container">
         <h1> My name </h1>
+
         <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         <button class="resume_button"><a href="">Download Resume</a></button>
     </div>
@@ -34,6 +47,6 @@
         <p class="footer_copy"> © Pasha Galayda. </p>
     </div>
 </div>
-
+<script src="js/themeChange.js"></script>
 </body>
 </html>
