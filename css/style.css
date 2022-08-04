@@ -8,6 +8,7 @@
     --secondary-font-color: rgb(0, 0, 0);
     --hover-background:#000000;
     --hover-color: #ffffff;
+    --project-secondary-background: #f2f2f2f2;
 }
 
 :root.light {
@@ -20,6 +21,7 @@
     --secondary-font-color: #ffffff;
     --hover-background:#155a9f;
     --hover-color: #ffffff;
+    --project-secondary-background: #092a4a;
 }
 
 .theme-icon {
@@ -98,6 +100,8 @@
     padding-bottom: 20px;
     justify-content: space-between;
     padding-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 
@@ -401,7 +405,7 @@ h2 {
     position: absolute;
     cursor: pointer;
     background-image: url("./Images/Light.svg");
-    background-color: #ccc;
+    background-color: var(--selected-color);
     -webkit-transition: .4s;
     transition: .4s;
 
@@ -442,6 +446,185 @@ h2 {
 .light-icon {
 filter: invert(100);
 fill-rule: inherit;
-fill: green!important;
+fill: green !important;
+}
 
+/*Project1 style */
+
+.jumbotron {
+    display: flex;
+    background-color: var(--background-color) !important;
+    color: var(--font-color);
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 30px;
+    grid-auto-rows: minmax(100px, auto);
+    align-items: center;
+    height: 60vh;
+    width: 95%;
+    padding: none !important;
+    margin: none !important;
+}
+
+.jumbotron-fluid {
+    margin: 15px;
+}
+
+.container-jumbo {
+    color: var(--font-color) !important;
+    grid-column: 1 / 4;
+    grid-row: 1;
+
+
+}
+
+.image-right {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+    background-color: none;
+    grid-column: 4 / 7;
+    grid-row: 1;
+}
+
+.image-left {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+    background-color: none;
+    grid-column: 1 / 4;
+    grid-row: 1;
+}
+
+.display-4 {
+    margin-bottom: .25em;
+}
+
+.section-align-left {
+    display: flex;
+    background-color: var(--background-color) !important;
+    color: var(--font-color);
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 30px;
+    grid-auto-rows: minmax(100px, auto);
+    align-items: center;
+    height: 60vh;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 2em !important;
+    padding-top: 2em !important;
+    background-color: rgb(0, 0, 0, 0.1) !important;
+}
+
+.section-align-right {
+    display: flex;
+    background-color: var(--background-color) !important;
+    color: var(--font-color);
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 30px;
+    grid-auto-rows: minmax(100px, auto);
+    align-items: center;
+    height: 60vh;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 2em !important;
+    padding-top: 2em !important;
+
+}
+
+.copy-right {
+        color: var(--font-color) !important;
+        grid-column: 4 / 6;
+        grid-row: 1;
+
+}
+
+.copy-left {
+    color: var(--font-color) !important;
+    grid-column: 2 / 4;
+    grid-row: 1;
+
+}
+
+.spacing-top {
+    padding-top: 100px;
+}
+
+ul {
+    padding-top: 1em;
+}
+
+.project-h1 {
+    font-size: 3em !important;
+}
+
+.section-title {
+    font-size: 1em;
+    text-transform: uppercase;
+    padding-bottom: 1em;
+    font-weight: 400;
+    letter-spacing: .5ch;
+}
+
+.section-align-center {
+        display: flex;
+        background-color: var(--background-color) !important;
+        color: var(--font-color);
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 30px;
+        grid-auto-rows: repeat(2, 1fr);
+        align-items: center;
+        height: fit-content;
+        width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 2em !important;
+        padding-top: 2em !important;
+}
+
+.copy-center {
+        color: var(--font-color) !important;
+        grid-column: 2 / 6;
+        grid-row: 2;
+}
+
+.quote {
+    font-size: 2em;
+    font-style: italic;
+}
+
+.quote-credit {
+    font-size: 1em;
+    font-style: italic;
+}
+
+.image-center {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+    background-color: none;
+    grid-column: 2 / 6;
+    grid-row: 1;
+}
+
+#secondary-bg {
+    background-color: var(--project-secondary-background) !important;
+}
+
+#center-with-image {
+    grid-column: 2 / 6;
+    grid-row: 2 !important;
+}
+
+#quote {
+    min-height: 60vh;
+    align-items: center;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 30px;
+    grid-auto-rows: minmax(100px, auto);
 }
